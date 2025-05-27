@@ -15,7 +15,7 @@ public class User {
     
     @GetMapping("/api/hw")      
     public String jdbcMessage(){
-        Map<String, Object> result = this.jdbcTemplate.query("select * from Goods", 2);
+        Map<String, Object> result = this.jdbcTemplate.query("select * from Goods");
         return result;
     }
 
